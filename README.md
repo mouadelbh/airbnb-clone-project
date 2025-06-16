@@ -94,3 +94,35 @@ Understand how the database will be structured to support the core functionality
 - A **Booking** is linked to one **User**, one **Property**, and one **Payment**.
 - A **Payment** is made for one **Booking**.
 - A **Review** is submitted by a **User** and linked to one **Property**.
+
+### 🔐 API Security
+
+To ensure data protection and system integrity, several backend security measures are implemented:
+
+- **Authentication**: Verifies the identity of users using secure methods such as token-based authentication (e.g., JWT). This ensures that only registered users can access protected endpoints.
+- **Authorization**: Restricts access to certain actions based on user roles (e.g., only property owners can edit their listings). This prevents unauthorized operations.
+- **Input Validation & Sanitization**: Prevents injection attacks (SQL, XSS) by ensuring user input is clean and controlled.
+- **Rate Limiting**: Limits the number of requests per user/IP to protect against brute-force attacks and API abuse.
+- **HTTPS Enforcement**: Ensures all data is encrypted during transmission.
+
+#### 🔐 Why Security Matters:
+- **User Data Protection**: Personal info like emails and passwords must remain confidential.
+- **Payment Integrity**: Transactions must be securely processed and verified to prevent fraud.
+- **Platform Trust**: Strong security helps build trust among users and hosts.
+
+### 🔁 CI/CD Pipeline
+
+**Continuous Integration (CI)** and **Continuous Deployment (CD)** are essential for efficient software development and delivery. CI/CD pipelines automatically test, build, and deploy code changes, reducing human error and speeding up the release cycle.
+
+#### 🚧 Benefits:
+- Ensures that code is thoroughly tested before deployment.
+- Automates repetitive tasks like running unit tests, linting, and pushing updates to staging/production environments.
+- Promotes faster feedback and collaboration within the team.
+
+#### 🛠️ Tools That Could Be Used:
+- **GitHub Actions**: Automates workflows for testing and deploying the project.
+- **Docker**: Ensures consistency across development and production environments.
+- **Celery & Redis**: Background task processing within the pipeline.
+
+CI/CD integration is especially important in this project to support collaborative development, frequent updates, and a smooth deployment process.
+
