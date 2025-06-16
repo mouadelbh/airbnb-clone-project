@@ -1,5 +1,31 @@
 # Airbnb Clone Project (FullStack App)
 
+### 🎯 Feature Breakdown
+
+**1. User Management**
+Users can register, log in, and manage their profiles securely. Authentication ensures only authorized access to personal data and actions.
+
+**2. Property Management**
+Hosts can create, update, and delete property listings, providing detailed information and setting rental prices. This enables a flexible and dynamic hosting experience.
+
+**3. Booking System**
+Users can book properties for specific dates, with automatic conflict checks and reservation status tracking. This forms the core transactional functionality of the platform.
+
+**4. Payment Processing**
+Secure payment handling allows users to pay for bookings using integrated payment services. Each payment is tied to a specific booking to ensure traceability.
+
+**5. Review System**
+Guests can leave reviews and ratings for properties after their stay. This promotes transparency and trust among users and hosts.
+
+**6. Asynchronous Tasks**
+Tasks such as email confirmations or notifications are handled in the background using Celery, improving performance and user experience.
+
+**7. API Security**
+Security measures like token-based authentication and input validation are implemented to protect user data and prevent unauthorized access.
+
+**8. CI/CD Integration**
+Automated testing and deployment pipelines ensure code quality and speed up the development process with consistent builds and rollouts.
+
 ### 👥 Team Roles
 
 - **Backend Developer** : Handles API development, server logic, and integration.
