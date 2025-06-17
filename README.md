@@ -37,7 +37,7 @@ Security measures like token-based authentication and input validation are imple
   **8. CI/CD Integration**
 Automated testing and deployment pipelines ensure code quality and speed up the development process with consistent builds and rollouts.
 
-### 👥 Project Roles and Responsibilities
+### 👥 Team Roles
 * **Project Manager**: Oversees timeline, coordinates team, manages deliverables
 * **Frontend Developers**: Implements UI components, ensures responsive design
 * **Backend Developers**: Handles API development, server logic, and integration. Builds APIs, manages database, implements business logic
